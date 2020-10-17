@@ -1,0 +1,494 @@
+
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="title" content="">
+      <meta name="description" content="">
+      <meta name="keywords" content="">
+       <title>Login - Jansewa</title>
+      <!-- REVOLUTION LAYERS STYLES -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/css/layers.css">
+      <link rel="stylesheet" href="assets/css/settings.css">
+      <link rel="stylesheet" href="assets/css/navigation.css">
+      <!-- Main Stylesheet -->
+      <link rel="stylesheet" href="assets/css/style1.css">
+      <link rel="stylesheet" href="assets/css/responsive.css">
+       <link rel="shortcut icon" href="/img/logos.png" type="image/logo.jpg">
+      <!-- Font Awesome -->
+      <!--<link href="assets/css/all.min.css" rel="stylesheet">-->
+      <!-- Start Bootstrap Carousel HEAD section -->
+     
+      <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    
+      <!-- End Bootstrap Carousel HEAD section -->
+      <link href="assets/css/wow-slider.css" rel="stylesheet" type="text/css">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" />
+        <script type="text/javascript" src="assets/js/jquery-latest.min.js"></script>
+		<script type="text/javascript" src="https://prio-soft.sextgem.com/js/wow-slider.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+        <style>
+            .slider-box { background:none repeat scroll 0 0 #FAFAFA; border-radius:5px 5px 5px 5px; box-shadow:0 0 3px #333333; margin:0 auto; width:100%; overflow:hidden; }
+        #slider-wrapper { margin:0 auto; padding:10px; }
+        #jslider-container { border:2px solid #FFFFFF; max-width:unset; position:relative; text-align:left; z-index:90; }
+        .contact-form{
+              background: #fff;
+              margin-bottom: 5%;
+              width: 100%;
+          }
+          .contact-form .form-control{
+              border-radius:1rem;
+          }
+          .contact-form form{
+              padding: 10%;
+          }
+          .contact-form form .row{
+              margin-bottom: -7%;
+          }
+          .contact-form h3{
+              margin-bottom: 8%;
+              margin-top: -10%;
+              text-align: center;
+              color: #0062cc;
+          }
+          .contact-form .btnContact {
+              width: 50%;
+              border: none;
+              border-radius: 1rem;
+              padding: 1.5%;
+              background: #dc3545;
+              font-weight: 600;
+              color: #fff;
+              cursor: pointer;
+          }
+          .btnContactSubmit
+          {
+              width: 50%;
+              border-radius: 1rem;
+              padding: 1.5%;
+              color: #fff;
+              background-color: #0062cc;
+              border: none;
+              cursor: pointer;
+          }
+          
+   
+
+			.form-control {
+			font-size: 15px;
+			}
+			.form-control, .form-control:focus, .input-group-text {
+			border-color: #e1e1e1;
+			}
+			.form-control, .btn {        
+			border-radius: 3px;
+			}
+			.signup-form {
+			width: 550px;
+			margin: 0 auto;
+			padding: 10px 0;		
+			}
+			.signup-form form {
+			color: #999;
+			border-radius: 3px;
+			margin-bottom: 15px;
+			background: #fff;
+			box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+			padding: 30px;
+			}
+			.signup-form h2 {
+			color: #333;
+			font-weight: bold;
+			margin-top: 0;
+			}
+			.signup-form hr {
+			margin: 0 -30px 20px;
+			}
+			.signup-form .form-group {
+			margin-bottom: 20px;
+			}
+			.signup-form label {
+			font-weight: normal;
+			font-size: 15px;
+			}
+			.signup-form .form-control {
+			min-height: 38px;
+			box-shadow: none !important;
+			}	
+			.signup-form .input-group-addon {
+			max-width: 42px;
+			text-align: center;
+			}	
+			.signup-form .btn, .signup-form .btn:active {        
+			font-size: 16px;
+			font-weight: bold;
+			background: #19aa8d !important;
+			border: none;
+			min-width: 140px;
+			}
+			.signup-form .btn:hover, .signup-form .btn:focus {
+			background: #179b81 !important;
+			}
+			.signup-form a {
+			color: #fff;	
+			text-decoration: underline;
+			}
+			.signup-form a:hover {
+			text-decoration: none;
+			}
+			.signup-form form a {
+			color: #19aa8d;
+			text-decoration: none;
+			}	
+			.signup-form form a:hover {
+			text-decoration: underline;
+			}
+			.signup-form .fa {
+			font-size: 21px;
+			}
+			.signup-form .fa-paper-plane {
+			font-size: 18px;
+			}
+			.signup-form .fa-check {
+			color: #fff;
+			left: 17px;
+			top: 18px;
+			font-size: 7px;
+			position: absolute;
+			}
+			select.form-control:not([size]):not([multiple]){
+				height: calc(3.4rem + 2px);
+			}
+</style>
+<script>
+toastr.options = {
+  "debug": false,
+  "positionClass": "toast-top-right",
+  "onclick": null,
+  "fadeIn": 300,
+  "fadeOut": 100,
+  "timeOut": 5000,
+  "extendedTimeOut": 1000
+}
+</script>
+   </head>
+   <body>
+      <!-- Preloader Start -->
+      <div class="preloader"></div>
+      <!-- Preloader End -->
+      <!-- header Start -->
+	        <header class="header-style-two">
+         <div class="header-wrapper">
+            <div class="header-top-area bg-secondary-color d-none d-lg-block">
+               <div class="container-fluid">
+                  <div class="row">
+                     <div class="col-lg-6 header-top-left-part">
+                        <span class="address" data-toggle="tooltip" data-placement="top" title="Mu.Dhrangdhra, Taluka. Dhrangdhra, District. Surendranagar"><i class="fa fa-globe"></i> Mu.Dhrangdhra, Taluka. Dhrangdhra, District. Surendranagar</span>
+                         <span class="phone"> <i class="fa fa-envelope"></i> charitabletrustjanseva@gmail.com </span>
+                     </div>
+                     <div class="col-lg-6 header-top-right-part text-right">
+                        <ul class="social-links">
+                           <li><a href="https://instagram.com" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                           <li><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                           <li><a href="https://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                           <li><a href="https://linkdin.com" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="header-middle">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12 d-flex align-items-center justify-content-between">
+                        <a class="navbar-brand logo" href="/" style="padding: 0px;">
+                        <img id="logo-image" class="img-center" src="img/logos.png" alt="logo image" style="height: 75px;">
+                        </a>
+                        <div class="topbar-info-area d-none d-sm-flex align-items-center justify-content-between">
+                           <div class="d-none d-md-flex align-items-center mr-3">
+                              <i class="fa fa-globe text-primary-color"></i>
+                              <div>
+                                 <h6>Address</h6>
+                                 <a class="text-gray" href="#" data-toggle="tooltip" data-placement="top" title="Mu.Dhrangdhra, Taluka. Dhrangdhra, District. Surendranagar">Mu.Dhrangdhra, Taluka. Dhrangdhra, District. Surendranagar</a>
+                              </div>
+                           </div>
+                           <div class="d-flex align-items-center mr-3">
+                              <i class="fa fa-envelope text-primary-color"></i>
+                              <div>
+                                 <h6>Email</h6>
+                                 <a class="text-gray" href="mailto:charitabletrustjanseva@gmail.com">charitabletrustjanseva@gmail.com</a>
+                              </div>
+                           </div>
+                           <div class="d-none d-lg-flex align-items-center">
+                              <i class="fa fa-phone text-primary-color"></i>
+                              <div>
+                                 <h6>Phone Number</h6>
+                                 <a class="text-gray" href="tel:9913765978">9913765978</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="header-navigation-area three-layers-header">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-xl-12 col-lg-12">
+                        <div class="header-searchbox-style-two">
+                           <div class="side-panel side-panel-trigger text-right d-none d-lg-block">
+                              <span class="bar1"></span>
+                              <span class="bar2"></span>
+                              <span class="bar3"></span>
+                           </div>
+                           <div class="show-searchbox">
+                              <a href="#"><i class="fa fa-search"></i></a>
+                           </div>
+                           <div class="toggle-searchbox">
+                              <form id="searchform-all" action="#" method="POST" >
+                                 <input type="hidden" name="_token" value="ZivcBSBHDuVB4XuxE45feZe6Tv7U5D2FEPuS48eC">                                    
+                                 <div >
+                                    <input  id="s" class="form-control" type="text" name="search" placeholder="Search Here" required>
+                                    <div class="input-box" >
+                                       <input type="submit" value="" id="searchsubmit"><i class="fa fa-search"></i>
+                                    </div>
+                                 </div>
+                              </form>
+                           </div>
+                        </div>
+                        <div class="main-menu">
+                           <nav id="mobile-menu">
+                              <ul>
+                                 <li><a href="index.html">Home</a></li>
+                                 <li><a href="about.html">About</a></li>
+                                 <li class="right-view"><a href="photo.html">Gallery</a></li>
+                                 <li class="right-view"><a href="contact.html">Contact</a></li>
+								 									 <li class="right-view"><a href="registration.html">Registration</a></li>
+									 <li class="right-view"><a href="login.html">Login</a></li>
+									                              </ul>
+                           </nav>
+                        </div>
+                        <div class="side-panel-content">
+                           <div class="close-icon">
+                              <button><i class="fa fa-close"></i></button>
+                           </div>
+                           <div class="side-panel-logo mrb-30">
+                              <a href="#">
+                              <a href="index.php">
+                              <img src="img/logos.png" alt="logo image">
+                              </a>
+                              </a>
+                           </div>
+                           <div class="side-info mrb-30">
+                              <div class="side-panel-element mrb-25">
+                                 <h4 class="mrb-10">Company Contact Information</h4>
+                                 <ul class="list-items">
+                                    <li><span class="fa fa-globe mrr-10 text-primary-color"></span>Mu.Dhrangdhra, Taluka. Dhrangdhra, District. Surendranagar</li>
+                                    <li><span class="fa fa-envelope mrr-10 text-primary-color"></span>charitabletrustjanseva@gmail.com</li>
+                                    <li><span class="fa fa-phone-alt mrr-10 text-primary-color"></span>9913765978</li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <h4 class="mrb-15">Social Media</h4>
+                           <ul class="social-list">
+								<li><a href="https://instagram.com" target="_blank"><i class="fa fa-instagram"></i></a></li>
+								<li><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="https://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="https://linkdin.com" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                           </ul>
+                        </div>
+                        <div class="mobile-menu"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- header End -->    <main>
+        <div id="banner-container" class="rev_slider_wrapper fullwidthbanner-container" data-alias="classic4export" data-source="gallery" style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
+            <section class="about-section pdt-100 pdb-100 bg-center-bottom" data-background="/img/about.png" style="background-color:#ff790640;">
+                <div class="signup-form">
+                    <form action="panel/common/actions.php" method="post">
+                        <h2>Sign In</h2>
+                        <p>Please fill in this form to login your account!</p>
+                        <hr>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                					<span class="input-group-text">
+                						<i class="fa fa-user"></i>
+                					</span>
+                                </div>
+                                <input class="form-control" name="username" placeholder="Mobile Number/Email ID" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                					<span class="input-group-text">
+                						<i class="fa fa-lock"></i>
+                					</span>
+                                </div>
+                                <input type="password" class="form-control" name="password" placeholder="Your Password" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-lg" name="login" style="background-color:#ff7906f2 !important;">Sign In</button>
+                        </div>
+                    </form>
+                    <div class="text-center">Don't have an account? <a href="registration.html">Create an account</a></div>
+                </div>
+            </section>
+            <!-- About Section End -->
+        </div>
+    </main>
+      <!-- Call to Action Start -->
+      <section class="call-to-action">
+         <div class="container">
+            <div class="cta-bg bg-primary-color">
+               <div class="row">
+                  <div class="col-lg-6 col-12">
+                     <div class="contact-info">
+                        <div class="cta-contact-icon">
+                           <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="cta-contact-content">
+                           <div class="cta-contact-text">Call Us Now</div>
+                           <div class="cta-contact-number">9913765978</div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-6 col-12">
+                     <div class="newsletter-form mrt-md-40">
+                        <form action="#admin/subscribe" method="POST">
+                           <input type="hidden" name="_token" value="ZivcBSBHDuVB4XuxE45feZe6Tv7U5D2FEPuS48eC">                                
+                           <div class="form-group clearfix">
+                              <input type="email" name="email" placeholder="Email Address" required>
+                              <button type="submit" class="newsletter-btn"><span class="icon fa fa-paper-plane"></span></button>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Call to Action End -->
+
+<!-- Footer Area Start -->
+      <footer class="footer">
+         <div class="footer-main-area" data-background="/img/footer-bg.png">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xl-4 col-lg-6 col-md-6">
+                     <div class="widget footer-widget">
+                        <img src="img/logo-footer.png" alt="footer-logo icon" class="mrb-20">
+                        
+                     </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-6 col-md-6">
+                     <div class="widget footer-widget">
+                        <h5 class="widget-title text-white mrb-30">Recent Gallery</h5>
+						                        <div class="single-post media mrb-20">
+                           <div class="post-image mrr-20">
+                              <img src="img/2.jpg" class="img-fluid image-size-70"  alt="blog image">
+                           </div>
+                           <div class="post-content media-body align-self-center">
+                              <h5 class="text-light-gray mrb-10"><a href="#">The Panchmahal Janseva Charitable Trust</a></h5>
+                              <h6 class="text-dark-light f-weight-500"><i class="fa fa-clock-o mrr-5"></i>03 October 2020</h6>
+                           </div>
+                        </div>
+						                        <div class="single-post media mrb-20">
+                           <div class="post-image mrr-20">
+                              <img src="img/1.jpg" class="img-fluid image-size-70"  alt="blog image">
+                           </div>
+                           <div class="post-content media-body align-self-center">
+                              <h5 class="text-light-gray mrb-10"><a href="#">Gallery Image</a></h5>
+                              <h6 class="text-dark-light f-weight-500"><i class="fa fa-clock-o mrr-5"></i>03 October 2020</h6>
+                           </div>
+                        </div>
+						                     </div>
+                  </div>
+                  <div class="col-xl-2 col-lg-6 col-md-6">
+                     <div class="widget footer-widget">
+                        <h5 class="widget-title text-white mrb-30">Useful Links</h5>
+                        <ul class="footer-widget-list">
+                           <li><a href="index.html">Home</a></li>
+                           <li><a href="about.html">About</a></li>
+                           <li><a href="gallery.html">Gallery</a></li>
+                           <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-6 col-md-6">
+                     <div class="widget footer-widget">
+                        <h5 class="widget-title text-white mrb-30">Support</h5>
+                
+                        <ul class="social-list list-primary-color clearfix mb-3">
+                           <li><a href="https://instagram.com" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                           <li><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                           <li><a href="https://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                           <li><a href="https://linkdin.com" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+						
+                        <address class="mrb-25">
+                           <div class="display-block mrb-10"><a href="tel:9913765978" class="text-light-gray"><i class="fa fa-phone-alt mrr-10"></i>9913765978</a></div>
+                           <div class="display-block mrb-10"><a href="mailto:charitabletrustjanseva@gmail.com" class="text-light-gray"><i class="fa fa-envelope mrr-10"></i>charitabletrustjanseva@gmail.com</a></div>
+                           <div class="display-block"><a href="#" class="text-light-gray"><i class="fa fa-globe mrr-10"></i>Mu.Dhrangdhra, Taluka. Dhrangdhra, District. Surendranagar</a></div>
+                        </address>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+	
+         <div class="footer-bottom-area">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xl-12">
+                     <div class="text-center">
+                        <span class="text-light-gray"> </span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- Footer Area End -->
+
+      <div id="cardModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h4 class="modal-title">Print Your Card</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                      <iframe src="printCard.php" frameborder="0" width="600" height="400"></iframe>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <!-- BACK TO TOP SECTION -->
+      <div class="back-to-top bg-gradient-color">
+         <i class="fa fa-angle-up"></i>
+      </div>
+      <!-- Integrated important scripts here -->
+      <script src="assets/js/jquery.v1.12.4.min.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+      <script src="assets/js/jquery-core-plugins.js"></script>
+      <script src="assets/js/main.js"></script>
+      <!-- Revolution Slider -->
+      <script src="assets/js/jquery.themepunch.tools.min.js" defer></script>
+      <script src="assets/js/jquery.themepunch.revolution.min.js" defer></script>
+      <script src="assets/js/slider_v1.js" defer></script>
+   </body>
+</html>
